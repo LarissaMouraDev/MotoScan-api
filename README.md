@@ -1,3 +1,7 @@
+Larissa de Freitas Moura -rm555136
+João Victor Rebello -rm555287
+Guilherme Francisco Silva -rm557648
+
 MotoScan API
 API RESTful para gerenciamento de uma frota de motos da Mottu, desenvolvida com ASP.NET Core.
 Descrição
