@@ -1,6 +1,14 @@
 🛵 MotoScan API
 API RESTful para gerenciamento de frota de motos da Mottu, desenvolvida com ASP.NET Core 6.0.
 
+👥 Autores
+Larissa de Freitas Moura — RM555136
+
+João Victor Rebello — RM555287
+
+Guilherme Francisco Silva — RM557648
+
+
 📄 Descrição
 O MotoScan é uma API que permite o controle completo de entrada e saída de motos, com funcionalidades de:
 
