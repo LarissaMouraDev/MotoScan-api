@@ -1,14 +1,14 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
-USER app
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["MotoScan.csproj", "."]
 RUN dotnet restore "MotoScan.csproj"
 COPY . .
+WORKDIR "/src/."
 RUN dotnet build "MotoScan.csproj" -c Release -o /app/build
 
 FROM build AS publish
